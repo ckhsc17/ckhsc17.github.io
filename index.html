@@ -23,7 +23,7 @@
         />
         <meta
             property="og:image"
-            content="https://ckhsc16.github.io/images/image.png" <!-- 改 -->
+            content="https://ckhsc16.github.io/images/image.png"
         />
 
         <!-- Twitter -->
@@ -61,21 +61,21 @@
         />
 
         <!-- Stylesheets-->
-        <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="stylesheet" href="style.css" />
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico" />
 
         <!-- Change Scroll Behavior js -->
-        <script defer src="/scripts/smoothscroll.min.js"></script>
+        <script defer src="smoothscroll.min.js"></script>
 
         <!-- LiteYTEmbed js -->
-        <link rel="stylesheet" href="/styles/lite-yt-embed.css" />
-        <script defer src="/scripts/lite-yt-embed.js"></script>
+        <link rel="stylesheet" href="lite-yt-embed.css" />
+        <script defer src="lite-yt-embed.js"></script>
 
         <!-- Main js -->
         <!-- java在此扮演按鈕功能 -->
-        <script defer src="/scripts/script.js"></script>
+        <script defer src="script.js"></script>
     </head>
     
     <!-- Body -->
@@ -83,7 +83,7 @@
         <nav> <!-- 網頁上方導航標籤 -->
             <div class="nav-content">
                 <div class="nav-title">
-                    <img src="/images/logo.png" alt="" />
+                    <img src="logo.png" alt="" />
                     <div class="nav-title-text">
                         <p>建中人社<br />十七屆成發</p>
                         <h2>拾起</h2>
@@ -103,7 +103,6 @@
                             >
                         </li>
                         <li><a href="/doc/book.pdf">成發手冊</a></li> <!-- 改 -->
-                        <li><a href="/tickets/">入場券</a></li> <!-- 改 -->
                     </ul>
                 </div>
             </div>
@@ -122,9 +121,23 @@
                     </li>
                     <li>
                         <a
+                            href="javascript: scrollTo('a')"
+                            class="scroll-bar-links"
+                            >甲分場</a
+                        >
+                    </li>
+                    <li>
+                        <a
                             href="javascript: scrollTo('B')"
                             class="scroll-bar-links"
                             >B分場</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="javascript: scrollTo('b')"
+                            class="scroll-bar-links"
+                            >乙分場</a
                         >
                     </li>
                     <li>
@@ -134,6 +147,13 @@
                             >C分場</a
                         >
                     </li>
+                    <li>
+                        <a
+                            href="javascript: scrollTo('c')"
+                            class="scroll-bar-links"
+                            >丙分場</a
+                        >
+                    </li>                   
                 </ul>
             </div>
                                                     
@@ -151,44 +171,32 @@
                         /images/header_ibmpye_c_scale,w_1114.png 1114w,
                         /images/header_ibmpye_c_scale,w_1200.png 1200w
                     "
-                    src="/images/header_ibmpye_c_scale,w_1200.png" <!-- 相對路徑 -->
+                    src="/images/header_ibmpye_c_scale,w_1200.png" 
                     alt=""
-                />
+                /> <!-- 絕對路徑，載入不同解析度 -->
             </header>
             
             <!-- 主要網頁內容~ -->              
             <div class="content-description">
-                <h1>開幕影片</h1>
-                <div class="video219">
-                    <lite-youtube
-                        class="iframe"
-                        videoid="r_TqmfkxzDc"
-                        playlabel="播放：建中人社成發開場影片"
-                        params="vq=hd1080" <!-- VQ sets the video quality -->
-                        style="
-                            background-image: url('https://i.ytimg.com/vi/r_TqmfkxzDc/maxresdefault.jpg'); <!-- 開幕影片封面照 -->
-                        "
-                    ></lite-youtube>
-                </div>
-                
+
             <!-- A分場 -->
                 <span class="anchor" id="A"></span>
                 <h1>
                     A分場
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform"
-                        target="_blank" <!-- 點擊後開啟新網頁 -->
+                        target="_blank" 
                         rel="noopener noreferrer"
                         >提問表單</a
-                    >
-                </h1>
+                    > 
+                </h1> <!-- rel什麼意思？ -->
 
             <!-- A1個人介紹 -->
-                <div class="split"> <!-- 讓網頁一行可以放兩個人（？ -->
-                    <div class="big-container">
+                <div class="split"> <!-- 讓網頁一行可以放兩個人 -->
+                    <div class="big-container"> <!-- 左側 -->
                         <div class="container">
                             <div class="container-left">
-                                <img src="/A1.jpg" alt="" /> <!-- 需更改成我們自己照片的路徑 -->
+                                <img src="images17_circle/A1.jpg" alt="" /> <!-- 需更改成我們自己照片的路徑 -->
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -224,10 +232,10 @@
                     </div>
                     
                 <!-- A2個人介紹 -->
-                    <div class="big-container">
+                    <div class="big-container"> <!-- 右側 -->
                         <div class="container" id="A2">
                             <div class="container-left">
-                                <img src="A2.jpg" alt="" />
+                                <img src="images17_circle/A2.jpg" alt="" /> <!-- -->
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -256,13 +264,25 @@
                         </div>
                     </div>
                 </div>
-                
+            
+            <!-- 甲分場 -->
+                <span class="anchor" id="a"></span>
+                <h1>
+                    甲分場
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >提問表單</a
+                    > 
+                </h1>
+
             <!-- 甲1個人介紹 -->
                 <div class="split">
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
-                                <img src="/images/A3.png" alt="" />
+                                <img src="images17_circle/A3.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -286,37 +306,7 @@
                                 
                             </p>
                         </div>
-                    </div>
-                    
-                <!-- 甲2個人介紹 -->
-                    <div class="big-container">
-                        <div class="container">
-                            <div class="container-left">
-                                <img src="images/A4.jpg" alt="" />
-                                <div class="btn">
-                                    <p>
-                                        論文介紹<span class="indicator"></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-right">
-                                <h3>解典祐</h3>
-                                <p>個人小說創作</p>
-                                <a href="/doc/A4.pdf">論文全文</a>
-                                <a
-                                    href="https://www.youtube.com/watch?v=r_0NVmJcpJQ&list=PL14niwdj0IjGJWswda9YDCD1EghFjlSWC"
-                                    >成發影片</a
-                                >
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                社群平台、通訊軟體上都流傳著假訊息，而這些假訊息都可能影響我們的認知和行為。不過，既然假訊息是假的，為甚麼還有人會相信假訊息呢？抱持著這個疑問，我原本想對閱聽人相信假訊息的因素進行探討，但接著閱讀文獻後發現人的認知過程是很複雜的，很難透過單一篇研究就解決所有因素（而且因素間可能會互相影響）。於是我將研究聚焦在人對假訊息抱持的可信度（相信程度）和涉入程度（重要性）的關聯。對這項議題／研究有興趣的人可以閱讀論文文本，來更深入了解我是如何探討這個問題的。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
+                    </div>               
             
             <!-- B分場 -->
             <span class="anchor" id="B"></span>
@@ -335,7 +325,7 @@
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
-                                <img src="B1.jpg" alt="" />
+                                <img src="images17_circle/B1.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -369,7 +359,7 @@
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
-                                <img src="B2.jpg" alt="" />
+                                <img src="images17_circle/B2.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -388,20 +378,39 @@
                         </div>
                         <div class="description">
                             <p>
-                                在輔導協談的專業中，有一門以基督教為背景的「基督教協談」，幫助人解決心中的問題。這份研究探討的是這種協談的本質、發展過程，和台灣從事這種協談的工作者擁有的價值觀、常用的理論與技術以及他們對基督信仰與心理學結合的原則與立場。
+                                2019年最後一天，正當全世界都在慶祝新年到來之際，中國武漢，一個前所未有的肺炎病毒，正悄悄散播，大家當時還不曉得的是，這個不知名的病毒，將在短短不到半年之後，主宰整個地球。旋即，世界衛生組織發布全球大流行，諸多城市下達封城令抗疫，至今已累計超過上億人感染，數百萬人病歿，工廠關門，商店倒閉……。三年時間過去，威力仍不容小覷。
+                            </p>
+                            <p>
+                                為因應此一疫情，台灣設置了中央流行疫情指揮中心負責規劃以及發布有關肺炎病毒的所有防疫事項，高警覺的防疫意識亦成功延緩病毒的大規模入侵台灣，然而面對病毒不斷突變出更具傳播力以及感染力的新型變種，謹慎的防疫措施也難卻保堅固。去年夏天，台灣經歷第一次的疫情高峰，政府宣布三級警戒，呼籲你我減少非必要外出，希望藉此減少染疫以及死亡人數。我們從實體上課轉為居家學習，暫時和朋友分離，放棄辛苦籌備的成發，取消早已預定好的暑假旅程……，沒有人願意再次重蹈覆轍。                                
+                            </p>
+                            <p>
+                                然而，隨著主要流行病毒株變為以輕症或無症狀為主，以前封城防疫的方式，漸漸不為世界採納，無不開始思考鬆綁防疫措施，不強制隔離確診病患，大規模環境消毒，轉向與病毒共存，冀望回復疫情前的生活樣式。面對這樣趨勢，仍有多數台灣人懼怕病毒可能帶來的後遺症。對此，有諸多國內保險公司相繼推出防疫保單，保障若因確診或被衛生單位匡列隔離造成的財務或健康損失，一推出便蔚為風潮。這樣史無前例的保單，對於消費者而言，不論在保障範圍以及理賠條件等皆為陌生，消費者在選擇投保時是否已對其有相當程度的認知，抑或只是被恐懼或潮流控制而盲目購買，忽略其真實的必須性。
+                            </p>
+                            <p>
+                                對於以上的好奇，我們的論文《民眾知覺風險對防疫保單購買意願影響—以台灣民眾為例》便是希望能以收集問卷，藉由統計方法，了解並分析民眾對於疫情保單的風險高低以及其與購買意願之間的關聯。
                             </p>
                         </div>
                     </div>
                 </div>
             
             <!-- 乙分場 -->
-        
+                <span class="anchor" id="b"></span>
+                <h1>
+                    乙分場
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >提問表單</a
+                    >
+                </h1>
+
             <!-- 乙1個人介紹 -->
                 <div class="split">
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
-                                <img src="/images/B3.jpg" alt="" />
+                                <img src="images17_circle/B3.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -444,7 +453,7 @@
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
-                                <img src="/images/B4.jpg" alt="" />
+                                <img src="images17_circle/C1.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -476,7 +485,7 @@
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
-                                <img src="/images/C1.jpg" alt="" />
+                                <img src="images17_circle/C2.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -506,7 +515,17 @@
                     </div>
                     
                 <!-- 丙分場 -->
-                    
+                    <span class="anchor" id="c"></span>
+                    <h1>
+                        丙分場
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >提問表單</a
+                        >
+                    </h1>  
+
                 <!-- 丙1個人介紹 -->
                     <div class="big-container">
                         <div class="container" id="C2">
@@ -546,7 +565,7 @@
                     <div class="big-container">
                         <div class="container" id="C3">
                             <div class="container-left">
-                                <img src="/images/C3.jpg" alt="" />
+                                <img src="images17_circle/C3.jpg" alt="" />
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -568,157 +587,7 @@
                                 不知道大家有沒有看過《天橋上的魔術師》呢？這部影集在2021年末的金鐘獎不僅橫掃6項大獎，其中更包括了年度最佳影集的殊榮，這除了使更多人認識到這部影集之外也在網路上掀起了一波討論風潮，包含演員、導演、劇情以及劇組搭建的仿真中華商場都吸引了許多人的目光。我們在看完這一部作品之後，也深深的為之著迷，劇中討論了許多議題，像是80年代家庭和街坊間的生活樣貌、白色恐怖的政治氛圍以及多元性別族群受到的壓迫，都是牽連起整個故事的重要片段。而其中我們最感興趣的是當中的性別議題，男性角色的共通特質、女性角色的壓抑以及多元性別角色內心的矛盾與衝突，種種對於性別的描繪都引起我們的好奇心，萌生了深入叵析的想法。歡迎跟著我們一起窺探這部作品的神秘丰采吧！
                             </p>
                         </div>
-                    </div>
-                    
-                    
-                <span class="anchor" id="D"></span>
-                <h1>
-                    D分場
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >提問表單</a
-                    >
-                </h1>
-                <div class="split">
-                    <div class="big-container">
-                        <div class="container">
-                            <div class="container-left">
-                                <img src="/images/D1.jpg" alt="" />
-                                <div class="btn">
-                                    <p>
-                                        論文介紹<span class="indicator"></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-right">
-                                <h3>曾仲遠</h3>
-                                <p>108 課綱與建中學生社團選擇的關聯</p>
-                                <a href="/doc/D1.pdf">論文全文</a>
-                                <a
-                                    href="https://www.youtube.com/watch?v=LfXVC9SEC3I&list=PL14niwdj0IjHhXeM78vxpH7B_UgEPQK53&index=1"
-                                    >成發影片</a
-                                >
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                作為新課綱的實驗品，總是不免令人感到焦慮不安，尤其是在這一年看到這麽許多亂象橫空出世，也讓這個課綱更加的遭受質疑。其中，高中生在選擇社團上的改變，不僅在論壇上有過討論，其事態之大更是曾被媒體報導過。
-                            </p>
-                            <p>
-                                然而，這到底純屬一樁巧合，還是新課綱真的讓學生在選擇社團時有了更多的顧忌？如果新課綱真的跟學生社團選擇有關的話，又是哪些方面引起學生做出這些決定？
-                            </p>
-                            <p>
-                                我們無法直接把制度從眼前抹去，我們只能了解制度並在制度下開闢出自己的一條路，同樣的，那些奇特的現象也需要被了解，才能慢慢找出最適合的解方。因此在這裡希望透過這篇論文拋磚引玉，在發表我對於這個現象粗淺的分析後，也期待學弟能夠繼續探討新課綱下不同的問題，即使不能改變制度，但至少在做出一些決策時會更加的踏實，因為我們曾試圖理解過這個制度。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="big-container">
-                        <div class="container">
-                            <div class="container-left">
-                                <img src="/images/D2.jpg" alt="" />
-                                <div class="btn">
-                                    <p>
-                                        論文介紹<span class="indicator"></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-right">
-                                <h3>方博弘</h3>
-                                <p>
-                                    從《論公民》到《利維坦》──霍布斯政治論述的改變
-                                </p>
-                                <a href="/doc/D2.pdf">論文全文</a>
-                                <a
-                                    href="https://www.youtube.com/watch?v=Wv70wrgADBI&list=PL14niwdj0IjGeKirE7mqGfnDbcYEXyjj9&index=1"
-                                    >成發影片</a
-                                >
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                霍布斯是 17 世紀英國的政治哲學家。其在西元 1647
-                                年完成《論公民》，三年後又出版了《利維坦》。這兩本著作皆是為了證明獨斷之主權者存在的必要性。然而受英國內戰動盪不安的影響，卻又使其政治理念力猶未逮。因此就有學者指出，霍布斯的政治論述為此歷經轉變。
-                            </p>
-                            <p>
-                                而我的論文則基於上述背景，關心霍布斯從《論公民》到《利維坦》的政治論述究竟有何轉變。如果有幸，希望你能看看她。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="split">
-                    <div class="big-container">
-                        <div class="container">
-                            <div class="container-left">
-                                <img src="/images/D3.jpg" alt="" />
-                                <div class="btn">
-                                    <p>
-                                        論文介紹<span class="indicator"></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-right">
-                                <h3>黃靖緯</h3>
-                                <p>
-                                    為何而反？──從《聲明》、《基本法》、《逃犯條例》與《國安法》看香港反送中運動
-                                </p>
-                                <a href="/doc/D3.pdf">論文全文</a>
-                                <a
-                                    href="https://www.youtube.com/watch?v=9rmrJZFlBkY&list=PL14niwdj0IjHNkpi9NgDt5rdyi6Up3rCX"
-                                    >成發影片</a
-                                >
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                每當我們提起「社會運動」，總是會出現許多兩極的聲音，反對者或許覺得社會運動就是一群血氣方剛的小伙子，承受不了現實壓力成天抗議的行為，但對於支持者來說社會運動或許是初入社會的年輕人，用他們獨特的視角發現生活中的不公不義，從而決定站起來發聲的行為。那麼於
-                                2019
-                                年開始即獲得海內外許多關注的「香港反送中事件」中的人們，又是為了什麼而站出來呢？是為了煽動民族情緒，又或是在許多不公的積累下，決定挺身背水一戰呢？所以我想要透過梳理香港的基本大法——《中英聯合聲明》與《基本法》，和反送中事件中備受矚目的法律——《逃犯條例》與《國安法》這四部文件的脈絡，進而了解反送中事件的人們究竟是為何而反？
-                            </p>
-                        </div>
-                    </div>
-                    <div class="big-container">
-                        <div class="container" id="D4">
-                            <div class="container-left">
-                                <img src="/images/D4.jpg" alt="" />
-                                <div class="btn">
-                                    <p>
-                                        論文介紹<span class="indicator"></span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="container-right">
-                                <h3>王紹安</h3>
-                                <p>從愛情色彩理論分析徐志摩對陸小曼的愛情</p>
-                                <a href="/doc/D4.pdf">論文全文</a>
-                                <a
-                                    href="https://www.youtube.com/watch?v=OtKXBVkiIK8&list=PL14niwdj0IjFeUUR6RjZGo59h1KacCujT"
-                                    >成發影片</a
-                                >
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>
-                                我猜少男少女應該都對徐志摩蠻有興趣的吧？我也不例外，徐志摩不僅文章字句「濃得化不開」，他的私生活也常是眾人茶餘飯後的話題。像我高一的國文老師在講徐志摩那課時這麼說過：「XX卡好勒，我們來看這個爛人。」老師說是這麼說，但在我印象中徐志摩不就是離了婚娶了新老婆而已嗎？這個舉動在我們這年代看來應該不算太少見才對，徐志摩真的有必要承受爛人、渣男的罵名嗎？這就是我想研究的。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                    
-                <h1 id="END">閉幕影片</h1>
-                <div class="video169">
-                    <lite-youtube
-                        class="iframe"
-                        videoid="VgvlbXctFeg"
-                        playlabel="播放：建中人社成發閉幕影片"
-                        params="vq=hd1080"
-                        style="
-                            background-image: url('https://i.ytimg.com/vi/VgvlbXctFeg/maxresdefault.jpg');
-                        "
-                    ></lite-youtube>
-                </div>
+                    </div>               
             </div>
         </div>
         <footer>
