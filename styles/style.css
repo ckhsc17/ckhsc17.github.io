@@ -352,7 +352,7 @@ nav {
 }
 
 .sessions {
-    transition: all 0.2s ease;
+    transition: font-size 0.2s ease;
 }
 
 @media (max-width: 520px) {
