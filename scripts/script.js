@@ -32,10 +32,12 @@ document.querySelectorAll(".btn").forEach((item, i) => {
 
 // Scroll Highlighting
 const A = document.getElementById("A")
+const span_a = document.getElementById("a")
 const B = document.getElementById("B")
+const span_b = document.getElementById("b")
 const C = document.getElementById("C")
-const D = document.getElementById("D")
-const END = document.getElementById("END")
+const span_c = document.getElementById("c")
+const footer = document.getElementsByTagName("footer")[0]
 const scrollbar = document.getElementsByClassName("scroll-bar-links")
 
 function getPosition(element) {
@@ -53,29 +55,39 @@ function getPosition(element) {
 window.addEventListener("scroll", () => {
     const scrolled = window.scrollY
     const positionA = getPosition(A)
+    const position_a = getPosition(span_a)
     const positionB = getPosition(B)
+    const position_b = getPosition(span_b)
     const positionC = getPosition(C)
-    const positionD = getPosition(D)
-    const positionEND = getPosition(END)
+    const position_c = getPosition(span_c)
+    const position_footer = getPosition(footer)
 
     document.querySelectorAll(".scroll-bar-links").forEach((item) => {
         item.classList.remove("active")
     })
 
-    if (scrolled > positionA.y && scrolled < positionB.y) {
+    if (scrolled > positionA.y && scrolled < position_a.y) {
         scrollbar[0].classList.add("active")
         return
     }
-    if (scrolled > positionB.y && scrolled < positionC.y) {
+    if (scrolled > position_a.y && scrolled < positionB.y) {
         scrollbar[1].classList.add("active")
         return
     }
-    if (scrolled > positionC.y && scrolled < positionD.y) {
+    if (scrolled > positionB.y && scrolled < position_b.y) {
         scrollbar[2].classList.add("active")
         return
     }
-    if (scrolled > positionD.y && scrolled < positionEND.y) {
+    if (scrolled > position_b.y && scrolled < positionC.y) {
         scrollbar[3].classList.add("active")
+        return
+    }
+    if (scrolled > positionC.y && scrolled < position_c.y) {
+        scrollbar[4].classList.add("active")
+        return
+    }
+    if (scrolled > position_c.y && scrolled < position_footer.y) {
+        scrollbar[5].classList.add("active")
         return
     }
 })
