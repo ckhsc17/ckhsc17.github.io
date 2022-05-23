@@ -351,6 +351,28 @@ nav {
     }
 }
 
+.sessions {
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 520px) {
+    .sessions {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 445px) {
+    .sessions {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .sessions {
+        display: none;
+    }
+}
+
 .content {
     position: relative;
     max-width: 1500px;
@@ -498,6 +520,10 @@ h1 a:visited {
     .big-container {
         width: 100%;
     }
+}
+
+.scripting {
+    display: none;
 }
 
 .container {
