@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW"> <!-- 設定語碼 -->
+<html lang="zh-Hant-TW">
+    <!-- 設定語碼 -->
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- 版面設定為全螢幕 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 版面設定為全螢幕 -->
 
         <!-- Primary Meta Tags -->
         <title>建中人社十七屆成發</title>
@@ -77,10 +79,11 @@
         <!-- java在此扮演按鈕功能 -->
         <script defer src="scripts/script.js"></script>
     </head>
-    
+
     <!-- Body -->
     <body>
-        <nav> <!-- 網頁上方導航標籤 -->
+        <nav>
+            <!-- 網頁上方導航標籤 -->
             <div class="nav-content">
                 <div class="nav-title">
                     <img src="images17/logo.png" alt="" />
@@ -89,75 +92,79 @@
                         <h2>拾起</h2>
                     </div>
                 </div>
-                <div class="toggle-btn"></div> <!-- CSS -->
+                <div class="toggle-btn"></div>
+                <!-- CSS -->
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#">專題介紹</a></li> <!-- ??? -->
+                        <li><a href="#">專題介紹</a></li>
+                        <!-- ??? -->
                         <li>
                             <!-- 改 -->
                             <a
-                                href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform" 
+                                href="https://docs.google.com/forms/d/e/1FAIpQLScKS5uqPledg7dwmX4IRQjlaQCRIPRdE_jwmYXA9pOHJg7EQw/viewform"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >提問表單</a
                             >
                         </li>
-                        <li><a href="/doc/book.pdf">成發手冊</a></li> <!-- 改 -->
+                        <li><a href="/doc/book.pdf">成發手冊</a></li>
+                        <!-- 改 -->
                     </ul>
                 </div>
             </div>
         </nav>
 
         <!-- 網頁內容-右側選單；如何決定擺放位置...CSS？ -->
-        <div class="content"> 
+        <div class="content">
             <div class="scroll-bar">
                 <ul>
                     <li>
                         <a
                             href="javascript: scrollTo('A')"
                             class="scroll-bar-links"
-                            >A分場</a
+                            >A<span class="sessions">分場</span></a
                         >
                     </li>
                     <li>
                         <a
                             href="javascript: scrollTo('a')"
                             class="scroll-bar-links"
-                            >甲分場</a
+                            >甲<span class="sessions">分場</span></a
                         >
                     </li>
                     <li>
                         <a
                             href="javascript: scrollTo('B')"
                             class="scroll-bar-links"
-                            >B分場</a
+                            >B<span class="sessions">分場</span></a
                         >
                     </li>
                     <li>
                         <a
                             href="javascript: scrollTo('b')"
                             class="scroll-bar-links"
-                            >乙分場</a
+                            >乙<span class="sessions">分場</span></a
                         >
                     </li>
                     <li>
                         <a
                             href="javascript: scrollTo('C')"
                             class="scroll-bar-links"
-                            >C分場</a
+                            >C<span class="sessions">分場</span></a
                         >
                     </li>
                     <li>
                         <a
                             href="javascript: scrollTo('c')"
                             class="scroll-bar-links"
-                            >丙分場</a
+                            >丙<span class="sessions">分場</span></a
                         >
-                    </li>                   
+                    </li>
                 </ul>
             </div>
-                                                    
-            <header> <!-- 為什麼標題標籤底下放圖？ -->
+
+            <header>
+                <!-- 為什麼標題標籤底下放圖？ -->
                 <img
                     sizes="(max-width: 1200px) 100vw, 1200px"
                     srcset="
@@ -171,26 +178,28 @@
                         /images/header_ibmpye_c_scale,w_1114.png 1114w,
                         /images/header_ibmpye_c_scale,w_1200.png 1200w
                     "
-                    src="/images/header_ibmpye_c_scale,w_1200.png" 
+                    src="/images/header_ibmpye_c_scale,w_1200.png"
                     alt=""
-                /> <!-- 絕對路徑，載入不同解析度 -->
+                />
+                <!-- 絕對路徑，載入不同解析度 -->
             </header>
-            
-            <!-- 主要網頁內容~ -->              
+
+            <!-- 主要網頁內容~ -->
             <div class="content-description">
-
-            <!-- A分場 -->
+                <!-- A分場 -->
                 <span class="anchor" id="A"></span>
-                <h1>
-                    A分場
-                </h1> <!-- rel什麼意思？避免原瀏覽器做壞壞的事 -->
+                <h1>A分場</h1>
+                <!-- rel什麼意思？避免原瀏覽器做壞壞的事 -->
 
-            <!-- A1個人介紹 -->
-                <div class="split"> <!-- 讓網頁一行可以放兩個人 -->
-                    <div class="big-container"> <!-- 左側 -->
+                <!-- A1個人介紹 -->
+                <div class="split">
+                    <!-- 讓網頁一行可以放兩個人 -->
+                    <div class="big-container">
+                        <!-- 左側 -->
                         <div class="container">
                             <div class="container-left">
-                                <img src="images17/A1.jpg" alt="" /> <!-- 需更改成我們自己照片的路徑 -->
+                                <img src="images17/A1.jpg" alt="" />
+                                <!-- 需更改成我們自己照片的路徑 -->
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -199,10 +208,9 @@
                             </div>
                             <div class="container-right">
                                 <h3>廖俊威</h3>
-                                <p>
-                                    颱風災損與水果的價格變化分析
-                                </p>
-                                <a href="/doc/A1.pdf">論文全文</a> <!-- 需更改成我們自己論文的路徑 -->
+                                <p>颱風災損與水果的價格變化分析</p>
+                                <a href="/doc/A1.pdf">論文全文</a>
+                                <!-- 需更改成我們自己論文的路徑 -->
                                 <a
                                     href="https://www.youtube.com/watch?v=_Rze-8wVFdU"
                                     >成發影片</a
@@ -224,12 +232,14 @@
                             </p>
                         </div>
                     </div>
-                    
-                <!-- A2個人介紹 -->
-                    <div class="big-container"> <!-- 右側 -->
+
+                    <!-- A2個人介紹 -->
+                    <div class="big-container">
+                        <!-- 右側 -->
                         <div class="container" id="A2">
                             <div class="container-left">
-                                <img src="images17/A2.jpg" alt="" /> <!-- -->
+                                <img src="images17/A2.jpg" alt="" />
+                                <!-- -->
                                 <div class="btn">
                                     <p>
                                         論文介紹<span class="indicator"></span>
@@ -258,14 +268,12 @@
                         </div>
                     </div>
                 </div>
-            
-            <!-- 甲分場 -->
-                <span class="anchor" id="a"></span>
-                <h1>
-                    甲分場
-                </h1>
 
-            <!-- 甲1個人介紹 -->
+                <!-- 甲分場 -->
+                <span class="anchor" id="a"></span>
+                <h1>甲分場</h1>
+
+                <!-- 甲1個人介紹 -->
                 <div class="split">
                     <div class="big-container">
                         <div class="container">
@@ -280,7 +288,7 @@
                             <div class="container-right">
                                 <h3>李仲景</h3>
                                 <p>
-                                    看見與實踐:以交織性理論探討臺灣越南籍移工困境與契機
+                                    看見與實踐：以交織性理論探討臺灣越南籍移工困境與契機
                                 </p>
                                 <a href="/doc/A3.pdf">論文全文</a>
                                 <a
@@ -298,16 +306,19 @@
                                 目前研究多著重個案或族群，對於個別移工間差異的探討仍不足。因此，我嘗試透過訪談製造業移工生活與工作遭遇困境的經驗，探討移工身分與壓迫的交織，試圖描繪越南籍移工在權利爭取的過程中共同走過的地圖。然而，面對困境的移工仍然有改變得能力，更希冀透過此研究呈現移工面對困境時的回應。並且為移工權利爭取的未竟之業貢獻一份心力。
                             </p>
                         </div>
-                    </div>               
+                    </div>
+                    <div class="scripting">
+                        <div class="btn"></div>
+                        <div class="description"></div>
+                        <span class="indicator"></span>
+                    </div>
                 </div>
 
-            <!-- B分場 -->
-            <span class="anchor" id="B"></span>
-                <h1>
-                    B分場
-                </h1>
-        
-            <!-- B1個人介紹 -->
+                <!-- B分場 -->
+                <span class="anchor" id="B"></span>
+                <h1>B分場</h1>
+
+                <!-- B1個人介紹 -->
                 <div class="split">
                     <div class="big-container">
                         <div class="container">
@@ -341,8 +352,8 @@
                             </p>
                         </div>
                     </div>
-   
-                <!-- B2個人介紹 -->
+
+                    <!-- B2個人介紹 -->
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
@@ -369,7 +380,7 @@
                                 2019年最後一天，正當全世界都在慶祝新年到來之際，中國武漢，一個前所未有的肺炎病毒，正悄悄散播，大家當時還不曉得的是，這個不知名的病毒，將在短短不到半年之後，主宰整個地球。旋即，世界衛生組織發布全球大流行，諸多城市下達封城令抗疫，至今已累計超過上億人感染，數百萬人病歿，工廠關門，商店倒閉……。三年時間過去，威力仍不容小覷。
                             </p>
                             <p>
-                                為因應此一疫情，台灣設置了中央流行疫情指揮中心負責規劃以及發布有關肺炎病毒的所有防疫事項，高警覺的防疫意識亦成功延緩病毒的大規模入侵台灣，然而面對病毒不斷突變出更具傳播力以及感染力的新型變種，謹慎的防疫措施也難卻保堅固。去年夏天，台灣經歷第一次的疫情高峰，政府宣布三級警戒，呼籲你我減少非必要外出，希望藉此減少染疫以及死亡人數。我們從實體上課轉為居家學習，暫時和朋友分離，放棄辛苦籌備的成發，取消早已預定好的暑假旅程……，沒有人願意再次重蹈覆轍。                                
+                                為因應此一疫情，台灣設置了中央流行疫情指揮中心負責規劃以及發布有關肺炎病毒的所有防疫事項，高警覺的防疫意識亦成功延緩病毒的大規模入侵台灣，然而面對病毒不斷突變出更具傳播力以及感染力的新型變種，謹慎的防疫措施也難卻保堅固。去年夏天，台灣經歷第一次的疫情高峰，政府宣布三級警戒，呼籲你我減少非必要外出，希望藉此減少染疫以及死亡人數。我們從實體上課轉為居家學習，暫時和朋友分離，放棄辛苦籌備的成發，取消早已預定好的暑假旅程……，沒有人願意再次重蹈覆轍。
                             </p>
                             <p>
                                 然而，隨著主要流行病毒株變為以輕症或無症狀為主，以前封城防疫的方式，漸漸不為世界採納，無不開始思考鬆綁防疫措施，不強制隔離確診病患，大規模環境消毒，轉向與病毒共存，冀望回復疫情前的生活樣式。面對這樣趨勢，仍有多數台灣人懼怕病毒可能帶來的後遺症。對此，有諸多國內保險公司相繼推出防疫保單，保障若因確診或被衛生單位匡列隔離造成的財務或健康損失，一推出便蔚為風潮。這樣史無前例的保單，對於消費者而言，不論在保障範圍以及理賠條件等皆為陌生，消費者在選擇投保時是否已對其有相當程度的認知，抑或只是被恐懼或潮流控制而盲目購買，忽略其真實的必須性。
@@ -380,14 +391,12 @@
                         </div>
                     </div>
                 </div>
-            
-            <!-- 乙分場 -->
-                <span class="anchor" id="b"></span>
-                <h1>
-                    乙分場
-                </h1>
 
-            <!-- 乙1個人介紹 -->
+                <!-- 乙分場 -->
+                <span class="anchor" id="b"></span>
+                <h1>乙分場</h1>
+
+                <!-- 乙1個人介紹 -->
                 <div class="split">
                     <div class="big-container">
                         <div class="container">
@@ -401,7 +410,10 @@
                             </div>
                             <div class="container-right">
                                 <h3>陳寬昕</h3>
-                                <p>人生得疫須禁歡? 探討例外狀態於我國新冠肺炎防疫措施之適用</p>
+                                <p>
+                                    人生得疫須禁歡?
+                                    探討例外狀態於我國新冠肺炎防疫措施之適用
+                                </p>
                                 <a href="/doc/B3.pdf">論文全文</a>
                                 <a
                                     href="https://www.youtube.com/watch?v=FlTpW-7pvRg&list=PL14niwdj0IjEAcVFhGakTGCdcZoQ1B6Ba&index=1"
@@ -419,14 +431,17 @@
                             </p>
                         </div>
                     </div>
+                    <div class="scripting">
+                        <div class="btn"></div>
+                        <div class="description"></div>
+                        <span class="indicator"></span>
+                    </div>
                 </div>
 
                 <!-- C分場 -->
-                    <span class="anchor" id="C"></span>
-                    <h1>
-                        C分場
-                    </h1>    
-                
+                <span class="anchor" id="C"></span>
+                <h1>C分場</h1>
+
                 <!-- C1個人介紹 -->
                 <div class="split">
                     <div class="big-container">
@@ -453,12 +468,12 @@
                         </div>
                         <div class="description">
                             <p>
-                                 想必各位都有聽過《進擊的巨人》這部連載了十一年的神作，作為一部黑暗而沉重的少年漫畫，《進擊的巨人》裡出現了許多自由的概念，甚至主角就是以追求自由為出發點，我的專題研究是去探討《進擊的巨人》中呈現的自由意象。而存在主義是一門探討甚麼東西存在的哲學學科，乍聽之下非常無聊，然而深入閱讀文獻後會發現其中的人生觀十分熱血（這也是為甚麼我選擇存在主義來解釋《進擊的巨人》中的自由觀）。本文會用卡繆的「荒謬」與「反抗」概念來解析第一季上半的劇情，第一季下半則會選沙特的「責任」來詮釋，讓你用全新的角度再次看到《進擊的巨人》的厲害之處。建議先看過《進擊的巨人》動畫第一季的內容再來聆聽，體驗完劇情再看我的講解會更震撼！
+                                想必各位都有聽過《進擊的巨人》這部連載了十一年的神作，作為一部黑暗而沉重的少年漫畫，《進擊的巨人》裡出現了許多自由的概念，甚至主角就是以追求自由為出發點，我的專題研究是去探討《進擊的巨人》中呈現的自由意象。而存在主義是一門探討甚麼東西存在的哲學學科，乍聽之下非常無聊，然而深入閱讀文獻後會發現其中的人生觀十分熱血（這也是為甚麼我選擇存在主義來解釋《進擊的巨人》中的自由觀）。本文會用卡繆的「荒謬」與「反抗」概念來解析第一季上半的劇情，第一季下半則會選沙特的「責任」來詮釋，讓你用全新的角度再次看到《進擊的巨人》的厲害之處。建議先看過《進擊的巨人》動畫第一季的內容再來聆聽，體驗完劇情再看我的講解會更震撼！
                             </p>
                         </div>
                     </div>
-                
-            <!-- C2個人介紹 -->
+
+                    <!-- C2個人介紹 -->
                     <div class="big-container">
                         <div class="container">
                             <div class="container-left">
@@ -472,7 +487,8 @@
                             <div class="container-right">
                                 <h3>曾梓恩</h3>
                                 <p>
-                                    二二八學生行動與 1950 至 1970 年代的校風—以 建國中學和成功高中為例
+                                    二二八學生行動與 1950 至 1970 年代的校風—以
+                                    建國中學和成功高中為例
                                 </p>
                                 <a href="/doc/C1.pdf">論文全文</a>
                                 <a
@@ -487,16 +503,14 @@
                             </p>
                             <p>
                                 在這篇專題中，我會採取質性研究。不同絕大多數人的論文題目聚焦於經濟,法律,或者文學的題材,這篇論文則是以歷史事件作為研究的主題,身為一篇以歷史為題材的論文,經常需要閱讀許多文獻,並且互相比較,此外由於這篇論文討論的是一篇距今久遠的事件,因此在蒐集資料方面,都比較需要費很大的功夫。
-                            </p>                     
+                            </p>
                         </div>
                     </div>
                 </div>
-                    
+
                 <!-- 丙分場 -->
-                    <span class="anchor" id="c"></span>
-                    <h1>
-                        丙分場
-                    </h1>  
+                <span class="anchor" id="c"></span>
+                <h1>丙分場</h1>
 
                 <!-- 丙1個人介紹 -->
                 <div class="split">
@@ -512,9 +526,7 @@
                             </div>
                             <div class="container-right">
                                 <h3>陳泊華</h3>
-                                <p>
-                                    支持與成長:論《哈利波特》中的友愛
-                                </p>
+                                <p>支持與成長：論《哈利波特》中的友愛</p>
                                 <a href="/doc/C2.pdf">論文全文</a>
                                 <a
                                     href="https://www.youtube.com/watch?v=TTV4LXcC6-s&list=PL14niwdj0IjHYRKyRqpnFL-IVQn4FwbmT&index=1"
@@ -531,8 +543,8 @@
                             </p>
                         </div>
                     </div>
-        
-                <!-- 丙2個人介紹 -->
+
+                    <!-- 丙2個人介紹 -->
                     <div class="big-container">
                         <div class="container" id="C3">
                             <div class="container-left">
@@ -545,7 +557,9 @@
                             </div>
                             <div class="container-right">
                                 <h3>吳宥辰、李業揚、葉昕洋</h3>
-                                <p>析論影視作品《天橋上的魔術師》中的性別建構</p>
+                                <p>
+                                    析論影視作品《天橋上的魔術師》中的性別建構
+                                </p>
                                 <a href="/doc/C3.pdf">論文全文</a>
                                 <a
                                     href="https://www.youtube.com/watch?v=QZEdV0rh_8A"
@@ -558,8 +572,9 @@
                                 不知道大家有沒有看過《天橋上的魔術師》呢？這部影集在2021年末的金鐘獎不僅橫掃6項大獎，其中更包括了年度最佳影集的殊榮，這除了使更多人認識到這部影集之外也在網路上掀起了一波討論風潮，包含演員、導演、劇情以及劇組搭建的仿真中華商場都吸引了許多人的目光。我們在看完這一部作品之後，也深深的為之著迷，劇中討論了許多議題，像是80年代家庭和街坊間的生活樣貌、白色恐怖的政治氛圍以及多元性別族群受到的壓迫，都是牽連起整個故事的重要片段。而其中我們最感興趣的是當中的性別議題，男性角色的共通特質、女性角色的壓抑以及多元性別角色內心的矛盾與衝突，種種對於性別的描繪都引起我們的好奇心，萌生了深入叵析的想法。歡迎跟著我們一起窺探這部作品的神秘丰采吧！
                             </p>
                         </div>
-                    </div>               
+                    </div>
                 </div>
+            </div>
         </div>
         <footer>
             <div class="footer-content">
