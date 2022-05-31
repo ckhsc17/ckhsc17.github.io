@@ -14,19 +14,46 @@ const split = document.getElementsByClassName("split")
 
 document.querySelectorAll(".btn").forEach((item, i) => {
     item.addEventListener("click", () => {
+        var split_index = parseInt(i / 4)
+        var btn_index = split_index * 4
+        if (btn_index === i) {
+            if (
+                des[btn_index + 1].classList.contains("active") === false &&
+                des[btn_index + 2].classList.contains("active") === false &&
+                des[btn_index + 3].classList.contains("active") === false
+            ) {
+                split[split_index].classList.toggle("active")
+            }
+        }
+        if (btn_index + 1 === i) {
+            if (
+                des[btn_index].classList.contains("active") === false &&
+                des[btn_index + 2].classList.contains("active") === false &&
+                des[btn_index + 3].classList.contains("active") === false
+            ) {
+                split[split_index].classList.toggle("active")
+            }
+        }
+        if (btn_index + 2 === i) {
+            if (
+                des[btn_index].classList.contains("active") === false &&
+                des[btn_index + 1].classList.contains("active") === false &&
+                des[btn_index + 3].classList.contains("active") === false
+            ) {
+                split[split_index].classList.toggle("active")
+            }
+        }
+        if (btn_index + 3 === i) {
+            if (
+                des[btn_index].classList.contains("active") === false &&
+                des[btn_index + 2].classList.contains("active") === false &&
+                des[btn_index + 1].classList.contains("active") === false
+            ) {
+                split[split_index].classList.toggle("active")
+            }
+        }
         des[i].classList.toggle("active")
         indicator[i].classList.toggle("active")
-        var split_index = parseInt(i / 2)
-        if (i / 2 != split_index) {
-            if (des[i - 1].classList.contains("active") === false) {
-                split[split_index].classList.toggle("active")
-            }
-        }
-        if (i / 2 === split_index) {
-            if (des[i + 1].classList.contains("active") === false) {
-                split[split_index].classList.toggle("active")
-            }
-        }
     })
 })
 
